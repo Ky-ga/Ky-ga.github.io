@@ -32,8 +32,9 @@
 			text-align: center;
 			}
 			
-			#header {
-			position: fixed;
+			header {
+			display: flex;
+			justify-content: center;
 			color: #980808;
 			font-size: 10vw;
 			width: 100%;
