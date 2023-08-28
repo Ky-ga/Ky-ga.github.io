@@ -9,7 +9,7 @@
 			.button{
 				position: absolute;
 				top:50%;
-				left:50%;
+				right:50%;
 				background-color:#980808;
 				color:#000000;
 				border: none;
