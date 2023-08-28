@@ -10,6 +10,7 @@
 </head>
 <body>
 
+
 <? function get_ip_address() {
   // check for shared internet/ISP IP
   if (!empty($_SERVER['HTTP_CLIENT_IP']) && $this->validate_ip($_SERVER['HTTP_CLIENT_IP']))
@@ -48,8 +49,11 @@ function validate_ip($ip) {
      self::$ip = $ip;
      return true;
  }
- ?>
+?>
     <div id="header"></div>
+
+    <div><h1 type="header" class="header"> Cultist </h1></div>
+
     <main>
         <p>In the heart of the digital realm, a mysterious figure emerged, known only as Dominus. With a cloak of anonymity
             shrouding their identity, Dominus was a force to be reckoned with in the vast expanse of the World Wide Web.
@@ -59,3 +63,32 @@ function validate_ip($ip) {
     </main>
 </body>
 </html>
+
+
+
+
+<style>
+
+#div1 {
+	background-color: #980808
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	font-size: 10vw;
+	width: 100%;
+	heigt: 20px;
+	content: Cultist;
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+<div id="div1"></div>
+<div id="div2"></div>
