@@ -8,65 +8,39 @@
     <link rel="stylesheet" href="Style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        #div1 {
-            background-color: #980808;
-            display: flex;
-            justify-content: center;
-            color: #fff;
-            font-size: 10vw;
-            width: 100%;
-            height: 20px;
-            content: "Cultist"; 
-        }
-		
-        p {
-            color: #980808;
-        }
-        
-        * {
-            box-sizing: border-box;
-        }
-        
-        .button {
-            position: absolute;
-            top: 50%;
-            background-color: #980808;
-            color: #fff;
-            border: none;
-            border-radius: 10px;
-            padding: 10px;
-            min-height: 30px;
-            min-width: 120px;
-        }
-        
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 50px auto;
-            background-image: url("https://www.colorwallpapers.com/uploads/wallpaper/solid-black-backgrounds/width-853/nlGBc983UmND-high-solid-black-beautiful-wallpaper-hd.jpg");
-        }
-        
-        .text-center {
-            text-align: center;
-        }
-        
-        .header {
-            display: flex;
-            justify-content: center;
-            color: #980808;
-            font-size: 20vw;
-            width: 100%;
-            height: 35px;
-        }
+
     </style>
 </head>
+
+<script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        const formData = new FormData(event.target);
+
+        // Send data to process.php using AJAX
+        fetch("IP.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Update the output area with the PHP-generated content
+            document.getElementById("ip").innerHTML = data;
+        });
+    });
+</script>
+
+
 <body>
     <h1 class="header">Cultist</h1>
     <main>
         <p class="text-center">In the heart of the digital realm, a mysterious figure emerged, known only as Dominus...</p>
-        <button type="button" class="button">Join The Cult</button>
     </main>
-
+    <form action="process.php" method="post">
+        <input type="text" name="user_input" placeholder="Join The Cult?">
+       <button type="Submit" class="button">Join The Cult</button>
+    </form>
+    <div id="ip">
 </body>
 </html>
