@@ -1,4 +1,4 @@
-.button {
+button {
     position: absolute;
     top: 50%;
     right: 10%; /* Adjust the right value as needed */
@@ -11,51 +11,49 @@
     min-width: 50px;
     font-size: 8vw;
     transform: translateY(-50%);
-	width: 150px;
-	height: 85px;
+    width: 150px;
+    height: 85px;
 }
 
 button:focus {
-  background-color:#989898;
+    background-color: #989898;
 }
 
-				
-        #div1 {
-            background-color: #000000;
-            display: flex;
-            justify-content: center;
-            color: #fff;
-            font-size: 10vw;
-            width: 100%;
-            height: 200px;
-            
-        }
-		
-        p {
-            color: #980808;
-        }
-        
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 50px auto;
-            background-image: url("https://www.colorwallpapers.com/uploads/wallpaper/solid-black-backgrounds/width-853/nlGBc983UmND-high-solid-black-beautiful-wallpaper-hd.jpg");
-        }
-        
-        .text-center {
-            text-align: center;
-        }
-        
-        .header {
-            display: flex;
-            justify-content: center;
-            color: #980808;
-            font-size: 20vw;
-            width: 100%;
-            height: 35px;
-        }
+#div1 {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 10vw;
+    width: 100%;
+    height: 200px;
+}
+
+p {
+    color: #980808;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    background-image: url("https://www.colorwallpapers.com/uploads/wallpaper/solid-black-backgrounds/width-853/nlGBc983UmND-high-solid-black-beautiful-wallpaper-hd.jpg");
+}
+
+.text-center {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: #980808;
+    font-size: 18vw;
+    width: 90%;
+    height: 35px;
+}
