@@ -13,6 +13,7 @@ button {
     transform: translateY(-50%);
     width: 150px;
     height: 85px;
+	text-align: center;
 }
 
 button:focus {
