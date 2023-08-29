@@ -9,14 +9,14 @@ button {
     padding: 15px;
     min-height: 30px;
     min-width: 50px;
-    font-size: 8vw;
+    font-size: 3vw;
     transform: translateY(-50%);
     width: 150px;
     height: 85px;
 }
 
 button:focus {
-    background-color: #989898;
+    background-color: #989808;
 }
 
 #div1 {
