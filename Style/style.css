@@ -15,6 +15,10 @@
 	height: 85px;
 }
 
+button:focus {
+  background-color:#989898;
+}
+
 				
         #div1 {
             background-color: #000000;
