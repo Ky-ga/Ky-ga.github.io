@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="shortcut icon" href="images/favicon.ico" />
     <meta charset="UTF-8">
+	<link rel="shortcut icon" href="images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultist</title>
     <link rel="stylesheet" href="Style/style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <h1 class="header">Cultist</h1>
     <main>
         <p class="text-center">In the heart of the digital realm, a mysterious figure emerged, known only as Dominus...</p>
-        <button id="runPhpButton" class="button">JOIN THE CULT?</button>
+        <form action="process.php" method="post">
+            <button id="runPhpButton" class="button" type="submit">JOIN THE CULT?</button>
+        </form>
         <div id="output" class="text-center">
             <!-- PHP output will be displayed here -->
         </div>
     </main>
-<div id="div1"></div>
-
+    <script src="script.js"></script>
 </body>
 </html>
