@@ -1,46 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="images/favicon.ico" />
-    <title>Cultist</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="Style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-
-    </style>
+    <title>Cultist</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="script.js"></script>
 </head>
-
-<script>
-    document.querySelector("form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent default form submission behavior
-
-        const formData = new FormData(event.target);
-
-        // Send data to process.php using AJAX
-        fetch("IP.php", {
-            method: "POST",
-            body: formData
-        })
-        .then(response => response.text())
-        .then(data => {
-            // Update the output area with the PHP-generated content
-            document.getElementById("ip").innerHTML = data;
-        });
-    });
-</script>
-
-
 <body>
     <h1 class="header">Cultist</h1>
     <main>
         <p class="text-center">In the heart of the digital realm, a mysterious figure emerged, known only as Dominus...</p>
+        <button id="runPhpButton" class="button">JOIN THE CULT?</button>
+        <div id="output" class="text-center">
+            <!-- PHP output will be displayed here -->
+        </div>
     </main>
-    <form action="process.php" method="post">
-        <input type="text" name="user_input" placeholder="Join The Cult?">
-       <button type="Submit" class="button">Join The Cult</button>
-    </form>
-    <div id="ip">
 </body>
 </html>
